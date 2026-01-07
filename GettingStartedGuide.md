@@ -16,6 +16,7 @@ Once completed, one can progress to the
 &emsp;[2.1 Setup AWS IoT Core](#21-setup-aws-iot-core)<br>
 &emsp;[2.2 Configure the project with the AWS IoT Thing Name and AWS device Endpoint](#22-configure-the-project-with-the-aws-iot-thing-name-and-aws-device-endpoint)<br>
 &emsp;[2.3 Provision the ESP32-C3 with the private key, device certificate and CA certificate in Development Mode](#23-provision-the-esp32-c3-with-the-private-key-device-certificate-and-ca-certificate-in-development-mode)<br>
+&emsp;[2.4 Quick Connect demo](#24-quick-connect-demo)<br>
 
 [3 Build and flash the demo project](#3-build-and-flash-the-demo-project)<br>
 
@@ -153,6 +154,11 @@ python managed_components/espressif__esp_secure_cert_mgr/tools/configure_esp_sec
 ```
 
 > **NOTE:** For convenience sake, you could place your key and certificate files under the `main/certs` directory.
+
+### 2.4 Quick Connect demo
+
+The Quick Connect demo differs from other demos as it does not require an AWS account. Refer to the [Getting Started Guide](./main/demo_tasks/quickconnect_v2_demo/GettingStarted.md)
+
 
 ## 3 Build and flash the demo project
 

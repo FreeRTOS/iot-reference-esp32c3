@@ -60,6 +60,10 @@
     #include "sub_pub_unsub_demo.h"
 #endif /* CONFIG_GRI_ENABLE_SUB_PUB_UNSUB_DEMO */
 
+#if CONFIG_GRI_ENABLE_QUICKCONNECT_V2_DEMO
+    #include "quickconnect_v2_demo.h"
+#endif /* CONFIG_GRI_ENABLE_QUICKCONNECT_V2_DEMO */
+
 #if CONFIG_GRI_ENABLE_TEMPERATURE_PUB_SUB_AND_LED_CONTROL_DEMO
     #include "temp_sub_pub_and_led_control_demo.h"
 #endif /* CONFIG_GRI_ENABLE_TEMPERATURE_PUB_SUB_AND_LED_CONTROL_DEMO */
@@ -253,6 +257,10 @@ static void prvStartEnabledDemos( void )
     BaseType_t xResult;
 
     #if ( CONFIG_GRI_RUN_QUALIFICATION_TEST == 0 )
+        #if CONFIG_GRI_ENABLE_QUICKCONNECT_V2_DEMO
+            vStartQuickConnectV2Demo();
+        #endif /* CONFIG_GRI_ENABLE_QUICKCONNECT_V2_DEMO */
+
         #if CONFIG_GRI_ENABLE_SUB_PUB_UNSUB_DEMO
             vStartSubscribePublishUnsubscribeDemo();
         #endif /* CONFIG_GRI_ENABLE_SIMPLE_PUB_SUB_DEMO */

@@ -6,3 +6,4 @@ dependencies:
     version: "^0.6.0"
     rules:
       - if: "idf_version >=5.0"
+  espressif/network_provisioning: "^1.2.0"
